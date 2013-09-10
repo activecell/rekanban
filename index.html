@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="shortcut icon" href="../../assets/ico/favicon.png"> -->
+
+    <title>Gitban: A Kanban interface for your Github Issues</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="gitban.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>Gitban</h1>
+        <h1 class='snuggle'><small>A Kanban interface for your Github Issues.</small></h1>
+        <p class="lead">
+          Often, some of your team wants to use Github Issues, <br />
+          while some of your team wants a more robust toolset <br />
+          like Pivotal Tracker, Trello, or Sprintly.
+        </p>
+        <p>
+          Now you don't have to choose.
+        </p>
+        <p>
+          <a href="app.html" class="btn btn-lg btn-success" href="#">
+            Get started today
+          </a>
+        </p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Simple, familiar agile interface</h2>
+          <p>
+            Gitban provides some of the best features found in the robust agile
+            tools in the marketplace:
+          </p>
+          <ul>
+            <li>Unlimited, fully customizable boards to suit your workflow</li>
+            <li>Simple drag for dynamic prioritization</li>
+            <li>Click to edit assignee or add comments</li>
+            <li><em>Optional:</em> Estimate level of effort and track velocity</li>
+          </ul>
+          <p>
+            Our full integration with Github also facilitates:
+          </p>
+          <ul>
+            <li>Simple Github authentication</li>
+            <li>Organization-wide, cross-project views</li>
+            <li>Filter by contributor, project, label, or milestone</li>
+            <li>Use the existing Github Issues interface rather than Gitban whenever you like</li>
+          </ul>
+          <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>No duplicate data</h2>
+          <p><strong>Everything is stored in Github Issues</p></strong>
+          <p>
+            For teams that appreciate the natural integration between Github Issues and
+            source code stored in Github, moving to an agile tool often means either:
+          </p>
+          <ol>
+            <li>Abandoning Github Issues entirely, or</li>
+            <li>Keeping a separate dataset synced with an integration</li>
+          </ol>
+          <p>
+            With Gitban, no separate data store exists. All data comes from Github issues
+            and all changes are propagated back to Github Issues.
+          </p>
+          <p>
+            Gitban is simply an alternate interface for users that prefer the benefits of
+            of Kanban process.
+          </p>
+          <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Ultimate security: No back end</h2>
+          <p>
+            Our unique "No back end" infrastructure is the ultimate in security. That's
+            right. No back end whatsoever. Our app is an Ember app served as a static
+            document. The app does not communicate with our servers at all — because we do
+            not have servers.
+          </p>
+          <p>
+            As such, when you authenticate with Github, we have no visibility into the
+            authentication details.
+          </p>
+          <p>
+            Your issues dataset is cached locally for performance gains, but the issues are
+            not stored separately with us. Your data is between you and Github.
+            Gitban provides some of the best features found in the robust agile
+            tools in the marketplace:
+          </p>
+          <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <!-- Site footer -->
+      <div class="footer">
+        <p>&copy; Adam Neary 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
+</html>
