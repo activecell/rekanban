@@ -2,8 +2,8 @@
 
 > A Kanban interface for your Github Issues
 
-Often times, some of your team wants to use Github Issues, while some of your
-team wants a more robust toolset like Pivotal Tracker, Trello, or Sprintly.
+Often, some of your team wants to use Github Issues, while some of your team
+wants a more robust toolset like Pivotal Tracker, Trello, or Sprintly.
 
 Now you don't have to choose.
 
