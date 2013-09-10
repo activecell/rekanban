@@ -1,11 +1,15 @@
 body {
-  padding-top: 20px;
+  padding-top: 70px;
   font-family: 'concourse_t4regular','Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'concourse_t4regular','Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+nav.subnav {
+  top: 50px;
 }
 
 .footer {
@@ -40,6 +44,16 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+
+/* index.html */
+
+a.list-group-item span.badge {
+  margin-top: 5px;
+}
+a.list-group-item img {
+  margin: -5px 5px 0 -5px;
 }
 
 
