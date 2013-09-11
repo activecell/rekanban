@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="shortcut icon" href="../../assets/ico/favicon.png"> -->
+
+    <title>Gitban: A Kanban interface for your Github Issues</title>
+
+    <!-- le styles -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <link href="gitban.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- le main nav -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.gitban.com">Gitban</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#">Choose repo scope</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+              <a href="app.html" type="button" class="btn btn-default navbar-btn">
+                Return to items
+              </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img height="20" src="https://2.gravatar.com/avatar/8a81be5788345ffdf759aeae606ff716?d=https%3A%2F%2Fidenticons.github.com%2F0fd1f4d6a647daf66b2a3f79ecd7eb36.png&amp;s=140" width="20">
+               adamrneary
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="projects.html"><i class="icon-code"></i> Projects</a></li>
+              <li class='disabled'><a href="#"><i class="icon-gears"></i> Settings</a></li>
+              <li class='disabled'><a href="#"><i class="icon-money"></i> Account</a></li>
+              <li class="divider"></li>
+              <li><a href="#" class='disabled'><i class="icon-question-sign"></i> Help</a></li>
+              <li><a href="index.html"><i class="icon-power-off"></i> Log out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="bs-sidebar hidden-print affix" role="complementary">
+            <ul class="nav bs-sidenav">
+              <li class="active">
+                <a href="#">Organizations</a>
+                <ul class="nav">
+                  <li><a href="#">activecell</a></li>
+                  <li><a href="#">bumpatrump</a></li>
+                  <li><a href="#">thoughtbot</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="#">You</a>
+                <ul class="nav">
+                  <li class=""><a href="#">adamrneary</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  Collaborators
+                  <i class="icon-question-sign pull-right" rel='tooltip' data-toggle="tooltip" title="These are the collaborators for all of your repos and forks"></i>
+                  </span>
+                </a>
+                <ul class="nav">
+                  <li><a href="#">deepaneary</a></li>
+                  <li><a href="#">umarsheikh</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Repository</th>
+                <th>Open issues</th>
+                <th>Follow</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Repo 1</td>
+                <td>432</td>
+                <td><button class="btn btn-success">Follow</button></td>
+              </tr>
+              <tr>
+                <td>Repo 2</td>
+                <td>23</td>
+                <td><button class="btn btn-success">Follow</button></td>
+              </tr>
+              <tr class="success">
+                <td>Repo 3</td>
+                <td>42</td>
+                <td><button class="btn">Unfollow</button></td>
+              </tr>
+              <tr>
+                <td>Repo 4</td>
+                <td>123</td>
+                <td><button class="btn btn-success">Follow</button></td>
+              </tr>
+              <tr class="success">
+                <td>Repo 5</td>
+                <td>252</td>
+                <td><button class="btn">Unfollow</button></td>
+              </tr>
+              <tr>
+                <td>Repo 6</td>
+                <td>743</td>
+                <td><button class="btn btn-success">Follow</button></td>
+              </tr>
+              <tr class="success">
+                <td>Repo 7</td>
+                <td>343</td>
+                <td><button class="btn">Unfollow</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div><!-- /.row -->
+
+      <!-- Site footer -->
+      <div class="footer">
+        <p>&copy; Adam Neary 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- le javascript
+    ================================================== -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="gitban.js"></script>
+  </body>
+</html>
