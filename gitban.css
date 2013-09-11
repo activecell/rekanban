@@ -1,11 +1,11 @@
 body {
   padding-top: 70px;
-  font-family: 'concourse_t4regular','Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Concourse','Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'concourse_t4regular','Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Concourse','Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .navbar-brand {
@@ -149,7 +149,7 @@ a.list-group-item img {
 
 
 @font-face {
-    font-family: 'concourse_t8italic';
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_t8_italic-webfont.eot');
     src: url('assets/fonts/concourse_t8_italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_t8_italic-webfont.woff') format('woff'),
@@ -160,7 +160,7 @@ a.list-group-item img {
 }
 
 @font-face {
-    font-family: 'concourse_t7italic';
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_t7_italic-webfont.eot');
     src: url('assets/fonts/concourse_t7_italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_t7_italic-webfont.woff') format('woff'),
@@ -171,7 +171,7 @@ a.list-group-item img {
 }
 
 @font-face {
-    font-family: 'concourse_t6italic';
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_t6_italic-webfont.eot');
     src: url('assets/fonts/concourse_t6_italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_t6_italic-webfont.woff') format('woff'),
@@ -182,7 +182,18 @@ a.list-group-item img {
 }
 
 @font-face {
-    font-family: 'concourse_t4italic';
+    font-family: 'Concourse';
+    src: url('assets/fonts/concourse_t6_italic-webfont.eot');
+    src: url('assets/fonts/concourse_t6_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/concourse_t6_italic-webfont.woff') format('woff'),
+         url('assets/fonts/concourse_t6_italic-webfont.ttf') format('truetype'),
+         url('assets/fonts/concourse_t6_italic-webfont.svg#concourse_t6italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_t4_italic-webfont.eot');
     src: url('assets/fonts/concourse_t4_italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_t4_italic-webfont.woff') format('woff'),
@@ -193,7 +204,7 @@ a.list-group-item img {
 }
 
 @font-face {
-    font-family: 'concourse_t3italic';
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_t3_italic-webfont.eot');
     src: url('assets/fonts/concourse_t3_italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_t3_italic-webfont.woff') format('woff'),
@@ -204,7 +215,7 @@ a.list-group-item img {
 }
 
 @font-face {
-    font-family: 'concourse_t2italic';
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_t2_italic-webfont.eot');
     src: url('assets/fonts/concourse_t2_italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_t2_italic-webfont.woff') format('woff'),
@@ -216,7 +227,7 @@ a.list-group-item img {
 
 
 @font-face {
-    font-family: 'concourse_t8regular';
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_t8_regular-webfont.eot');
     src: url('assets/fonts/concourse_t8_regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_t8_regular-webfont.woff') format('woff'),
@@ -228,7 +239,7 @@ a.list-group-item img {
 
 
 @font-face {
-    font-family: 'concourse_t7regular';
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_t7_regular-webfont.eot');
     src: url('assets/fonts/concourse_t7_regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_t7_regular-webfont.woff') format('woff'),
@@ -239,7 +250,7 @@ a.list-group-item img {
 }
 
 @font-face {
-    font-family: 'concourse_t6regular';
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_t6_regular-webfont.eot');
     src: url('assets/fonts/concourse_t6_regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_t6_regular-webfont.woff') format('woff'),
@@ -249,9 +260,19 @@ a.list-group-item img {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Concourse';
+    src: url('assets/fonts/concourse_t6_regular-webfont.eot');
+    src: url('assets/fonts/concourse_t6_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/concourse_t6_regular-webfont.woff') format('woff'),
+         url('assets/fonts/concourse_t6_regular-webfont.ttf') format('truetype'),
+         url('assets/fonts/concourse_t6_regular-webfont.svg#concourse_t6regular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
 
 @font-face {
-    font-family: 'concourse_t4regular';
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_t4_regular-webfont.eot');
     src: url('assets/fonts/concourse_t4_regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_t4_regular-webfont.woff') format('woff'),
@@ -263,7 +284,7 @@ a.list-group-item img {
 
 
 @font-face {
-    font-family: 'concourse_t3regular';
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_t3_regular-webfont.eot');
     src: url('assets/fonts/concourse_t3_regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_t3_regular-webfont.woff') format('woff'),
@@ -274,7 +295,7 @@ a.list-group-item img {
 }
 
 @font-face {
-    font-family: 'concourse_t2regular';
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_t2_regular-webfont.eot');
     src: url('assets/fonts/concourse_t2_regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_t2_regular-webfont.woff') format('woff'),
@@ -285,7 +306,7 @@ a.list-group-item img {
 }
 
 @font-face {
-    font-family: 'concourse_c8regular';
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_c8_regular-webfont.eot');
     src: url('assets/fonts/concourse_c8_regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_c8_regular-webfont.woff') format('woff'),
@@ -297,7 +318,7 @@ a.list-group-item img {
 }
 
 @font-face {
-    font-family: 'concourse_c7regular';
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_c7_regular-webfont.eot');
     src: url('assets/fonts/concourse_c7_regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_c7_regular-webfont.woff') format('woff'),
@@ -309,7 +330,7 @@ a.list-group-item img {
 }
 
 @font-face {
-    font-family: 'concourse_c6regular';
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_c6_regular-webfont.eot');
     src: url('assets/fonts/concourse_c6_regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_c6_regular-webfont.woff') format('woff'),
@@ -321,7 +342,19 @@ a.list-group-item img {
 }
 
 @font-face {
-    font-family: 'concourse_c4regular';
+    font-family: 'Concourse';
+    src: url('assets/fonts/concourse_c6_regular-webfont.eot');
+    src: url('assets/fonts/concourse_c6_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/concourse_c6_regular-webfont.woff') format('woff'),
+         url('assets/fonts/concourse_c6_regular-webfont.ttf') format('truetype'),
+         url('assets/fonts/concourse_c6_regular-webfont.svg#concourse_c6regular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-variant:small-caps;
+}
+
+@font-face {
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_c4_regular-webfont.eot');
     src: url('assets/fonts/concourse_c4_regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_c4_regular-webfont.woff') format('woff'),
@@ -333,7 +366,7 @@ a.list-group-item img {
 }
 
 @font-face {
-    font-family: 'concourse_c3regular';
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_c3_regular-webfont.eot');
     src: url('assets/fonts/concourse_c3_regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_c3_regular-webfont.woff') format('woff'),
@@ -345,7 +378,7 @@ a.list-group-item img {
 }
 
 @font-face {
-    font-family: 'concourse_c2regular';
+    font-family: 'Concourse';
     src: url('assets/fonts/concourse_c2_regular-webfont.eot');
     src: url('assets/fonts/concourse_c2_regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('assets/fonts/concourse_c2_regular-webfont.woff') format('woff'),
