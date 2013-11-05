@@ -1,68 +1,33 @@
 # Features
 
-## Board
-- create a board that describes the goal
-- add tasks to the boards
-- divide tasks into status groups:
-  * Next Up - for newly created tasks
-  * In progress - for ones that are currently being worked on
-  * Accepted - for the ones that are completed and accepted
-- Filter tasks by:
-  * Description
-  * Assignee
-  * Status
-  * Label
-- Save filters for easier filtering in the future (optional)
-- easily navigate trough multiple boards
-- get notified on progress
-- notify users on status of their tasks
-- create task labels that are relevant for the boards so that they could be easily applied to the tasks later on
+## Boards
+- Create a board to track a group of tasks from start to finish
+- Quickly and easily reorder tasks by dragging to prioritize
+- Assign tasks to people
+- Drag tasks from "Next up" to "In progress" to "Complete" as tasks are executed
+- Anyone can add questions and ideas as tasks to promote discussion and ensure that questions get answered
+- Add tags to tasks and quickly find the tasks you are looking for
+  * Search task descriptions
+  * Filter by assignee
+  * Filter by tag
+  * Filter by task type (To-do, question, idea)
+- Save a board as a "recipe" to be repeated as often as you like
+- Get notified of progress on a board however you like
 
-### Clients
-- can create many boards
-- can participate in multiple boards
-- can have many users
-- can create multiple recipes
-- can apply recipes on multiple boards:
-  * weakly
-  * monthly
-  * annually 
-- can create tasks
-- can comment on tasks
-- can prioritize tasks
-- can change task status
-- can create labels
-- can apply labels to tasks
-- can save filters
+## Tasks
+- Task descriptions are a great place for detailed instructions
+- Attach documents to a task like pdf, jpg, word or excel documents
+- Add checklists to a task for simple and easy management of small subtasks
+- Collaborate in one place by adding comments to tasks and tag users in the comments to make sure they see it! No more lost emails and voicemails
+- Get notified of progress on a task however you like
 
-### Users
-- can participate in multiple boards
-- can have many clients
-- can view tasks in boards that they participate in
-- can comment on tasks
-- can check subtasks in tasks
-- can save filters
+# Admin features not appearing on the marketing site
 
-## Task
-- create task with meaningful descriptive title and task description
-- assign task to a user
-- prioritize tasks
-- apply label to a task for easier filtering
-- attach documents to a task like pdf, jpg, word or excel documents. (optional)
-- add subtasks to a task. ie. if a task is too big you can divide that task into smaller subtasks (optional)
-- chain dependent tasks. ie. if one task can't be done without another task is completed first. (optional)
-- communicate progress in task comments, tag users and ask questions. let all conversation happen in one place.
-
-### Clients
-only clients can create tasks and change their statuses.
-
-## Recipe
-- create a recipe which is a template for a board. it consists of a reparative tasks which can be applied:
-  * weakly
-  * monthly
-  * annually
-- apply recipe to a board manually or automatically based on a time schedule
-- share recipes between users
-
-### Clients
-only clients can create, update, delete, share and apply recipes
+## Users
+- Recipes are a subclass of Boards
+- Boards and Recipes belong to Accounts
+- Users and Accounts are many to many
+- Users may invite other users to their account
+- Tasks belong to Boards but may be assigned to Users
+- Comments belong to Tasks but may reference Users
+- Users can share Recipes between accounts
