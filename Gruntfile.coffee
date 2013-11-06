@@ -17,7 +17,7 @@ module.exports = (grunt) ->
       compile:
         files:
           "public/css/index.css": [
-            "styles/**/*.scss"
+            "stylesheets/**/*.scss"
           ]
           
     # compile hbs templates into js
@@ -29,16 +29,16 @@ module.exports = (grunt) ->
               .replace('src/app/views/', '')
               .replace('.hbs', '')
         files:
-          "public/js/templates.js": ["src/app/views/**/*.hbs"]
+          "public/javascriptsjavascripts/templates.js": ["src/app/views/**/*.hbs"]
 
     # concatenate vendor files
     concat:
       js:
         src: [
-          "vendor/js/handlebars.js",
-          "vendor/js/ember.js",
-          "vendor/js/ember-data.js",
-          "vendor/js/recurly.js"
+          "vendor/javascripts/handlebars.js",
+          "vendor/javascripts/ember.js",
+          "vendor/javascripts/ember-data.js",
+          "vendor/javascripts/recurly.js"
         ]
         dest: "static/vendor.js"
       # css:
@@ -52,7 +52,7 @@ module.exports = (grunt) ->
     uglify:
       app:
         files:
-          "public/js/app.min.js": ["public/js/vendor.js", "public/js/templates.js", "public/js/app.js"]
+          "public/javascripts/app.min.js": ["public/javascripts/vendor.js", "public/javascripts/templates.js", "public/javascripts/app.js"]
 
     # The watch task can be used to monitor the filesystem and execute specific
     # tasks when files are modified.

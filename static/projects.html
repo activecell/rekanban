@@ -1,28 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- <link rel="shortcut icon" href="../../assets/ico/favicon.png"> -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Gitban: A Kanban interface for your Github Issues</title>
 
-    <title>Gitban: A Kanban interface for your Github Issues</title>
+  <!-- le styles -->
+  <link rel="stylesheet" href="../vendor/stylesheets/profitably-branding.css">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+  <link href="gitban.css" rel="stylesheet">
 
-    <!-- le styles -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
-    <link href="gitban.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
+  <![endif]-->
+</head>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
+<body>
 
     <!-- le main nav -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -104,52 +101,54 @@
           </div>
         </div>
         <div class="col-md-9">
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th>Repository</th>
-                <th>Open issues</th>
-                <th>Follow</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Repo 1</td>
-                <td>432</td>
-                <td><button class="btn btn-success">Follow</button></td>
-              </tr>
-              <tr>
-                <td>Repo 2</td>
-                <td>23</td>
-                <td><button class="btn btn-success">Follow</button></td>
-              </tr>
-              <tr class="success">
-                <td>Repo 3</td>
-                <td>42</td>
-                <td><button class="btn">Unfollow</button></td>
-              </tr>
-              <tr>
-                <td>Repo 4</td>
-                <td>123</td>
-                <td><button class="btn btn-success">Follow</button></td>
-              </tr>
-              <tr class="success">
-                <td>Repo 5</td>
-                <td>252</td>
-                <td><button class="btn">Unfollow</button></td>
-              </tr>
-              <tr>
-                <td>Repo 6</td>
-                <td>743</td>
-                <td><button class="btn btn-success">Follow</button></td>
-              </tr>
-              <tr class="success">
-                <td>Repo 7</td>
-                <td>343</td>
-                <td><button class="btn">Unfollow</button></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="well">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Repository</th>
+                  <th>Open issues</th>
+                  <th>Follow</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Repo 1</td>
+                  <td>432</td>
+                  <td><button class="btn btn-success">Follow</button></td>
+                </tr>
+                <tr>
+                  <td>Repo 2</td>
+                  <td>23</td>
+                  <td><button class="btn btn-success">Follow</button></td>
+                </tr>
+                <tr class="success">
+                  <td>Repo 3</td>
+                  <td>42</td>
+                  <td><button class="btn">Unfollow</button></td>
+                </tr>
+                <tr>
+                  <td>Repo 4</td>
+                  <td>123</td>
+                  <td><button class="btn btn-success">Follow</button></td>
+                </tr>
+                <tr class="success">
+                  <td>Repo 5</td>
+                  <td>252</td>
+                  <td><button class="btn">Unfollow</button></td>
+                </tr>
+                <tr>
+                  <td>Repo 6</td>
+                  <td>743</td>
+                  <td><button class="btn btn-success">Follow</button></td>
+                </tr>
+                <tr class="success">
+                  <td>Repo 7</td>
+                  <td>343</td>
+                  <td><button class="btn">Unfollow</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
       </div><!-- /.row -->
@@ -165,7 +164,11 @@
     <!-- le javascript
     ================================================== -->
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="../vendor/javascripts/profitably-branding.js"></script>
     <script src="gitban.js"></script>
+    
+    <!-- Typekit -->
+    <script type="text/javascript" src="//use.typekit.net/xff3ece.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </body>
 </html>
