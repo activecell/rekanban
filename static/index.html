@@ -9,9 +9,9 @@
   <title>Bookkeeper Kanban</title>
   
   <!-- le styles -->
-  <link rel="stylesheet" href="../vendor/stylesheets/profitably-branding.css">
+  <link rel="stylesheet" href="stylesheets/profitably-branding.css">
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
-  <link href="gitban.css" rel="stylesheet">
+  <link href="stylesheets/gitban.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -86,43 +86,69 @@
 
       <!-- le sub nav -->
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-6">
           <div class="well well-sm">
             <div class="input-group">
               <span class="input-group-addon">
-                <i class="icon-search"></i> Description
+                <i class="fa fa-search"></i> Description
               </span>
-              <input type="text" class="form-control" placeholder="TODO: Chosen multi">
+              <select class="chosen-select" multiple>
+                <option value="0" selected>Filter by description</option>
+                <option value="1">Description 1</option>
+                <option value="2">Description 2</option>
+                <option value="3">Description 3</option>
+                <option value="4">Description 4</option>
+              </select>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-6">
           <div class="well well-sm">
             <div class="input-group">
               <span class="input-group-addon">
-                <i class="icon-user"></i> Assignee
+                <i class="fa fa-user"></i> Assignee
               </span>
-              <input type="text" class="form-control" placeholder="TODO: Chosen multi">
+              <select class="chosen-select" multiple>
+                <option value="0" selected>Filter by Assignee</option>
+                <option value="1">Assignee 1</option>
+                <option value="2">Assignee 2</option>
+                <option value="3">Assignee 3</option>
+                <option value="4">Assignee 4</option>
+              </select>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
           <div class="well well-sm">
             <div class="input-group">
               <span class="input-group-addon">
-                <i class="icon-check"></i> Status
+                <i class="fa fa-check"></i> Status
               </span>
-              <input type="text" class="form-control" placeholder="TODO: Chosen multi">
+              <select class="chosen-select" multiple>
+                <option value="0" selected>Filter by Status</option>
+                <option value="1">Status 1</option>
+                <option value="2">Status 2</option>
+                <option value="3">Status 3</option>
+                <option value="4">Status 4</option>
+              </select>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-6">
           <div class="well well-sm">
             <div class="input-group">
               <span class="input-group-addon">
-                <i class="icon-tag"></i> Label
+                <i class="fa fa-tag"></i> Label
               </span>
-              <input type="text" class="form-control" placeholder="TODO: Chosen multi">
+              <select class="chosen-select" multiple>
+                <option value="0" selected>Filter by Label</option>
+                <option value="1">Label 1</option>
+                <option value="2">Label 2</option>
+                <option value="3">Label 3</option>
+                <option value="4">Label 4</option>
+              </select>
             </div>
           </div>
         </div>
@@ -307,7 +333,7 @@
                          <div class="form-group">
                            <label for="selectAssignee" class="col-lg-2 control-label">Assignee</label>
                            <div class="col-lg-10">
-                             <select id="selectAssignee" class="form-control">
+                             <select id="selectAssignee" class="chosen-select">
                                <option>Adam Neary</option>
                                <option>Sinisa</option>
                                <option>Aleksey</option>
@@ -318,7 +344,7 @@
                          <div class="form-group">
                            <label for="selectMilestone" class="col-lg-2 control-label">Milestone</label>
                            <div class="col-lg-10">
-                             <select id="selectMilestone" class="form-control">
+                             <select id="selectMilestone" class="chosen-select">
                                <option>Milestone 1</option>
                                <option>Milestone 2</option>
                                <option>Milestone 3</option>
@@ -328,7 +354,11 @@
                          <div class="form-group">
                             <label for="multiLabels" class="col-lg-2 control-label">Labels</label>
                             <div class="col-lg-10">
-                              <input type="text" class="form-control" id="multiLabels" placeholder="TODO: Chosen multi">
+                              <select id="selectMilestone" class="chosen-select" multiple width="300">
+                                <option>Label 1</option>
+                                <option>Label 2</option>
+                                <option>Label 3</option>
+                              </select>
                             </div>
                           </div>
                        </form>
@@ -372,8 +402,8 @@
     <!-- le javascript
     ================================================== -->
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="../vendor/javascripts/profitably-branding.js"></script>
-    <script src="gitban.js"></script>
+    <script src="javascripts/profitably-branding.js"></script>
+    <script src="javascripts/gitban.js"></script>
     
     <!-- Typekit -->
     <script type="text/javascript" src="//use.typekit.net/xff3ece.js"></script>
