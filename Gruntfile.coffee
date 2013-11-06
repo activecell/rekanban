@@ -29,7 +29,7 @@ module.exports = (grunt) ->
               .replace('src/app/views/', '')
               .replace('.hbs', '')
         files:
-          "public/javascriptsjavascripts/templates.js": ["src/app/views/**/*.hbs"]
+          "public/javascripts/templates.js": ["src/app/views/**/*.hbs"]
 
     # concatenate vendor files
     concat:
