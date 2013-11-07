@@ -3,8 +3,8 @@ body {
 }
 
 /* TODO: Resolve this issue in profitably-branding */
-.input-group-addon .chosen-container-single .chosen-single,
-.input-group-addon .chosen-container-multi .chosen-choices {
+.input-group .chosen-container-single .chosen-single,
+.input-group .chosen-container-multi .chosen-choices {
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
   border-left-color: transparent;

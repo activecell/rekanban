@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <title>Rekanban</title>
+  
+  <!-- le styles -->
+  <link rel="stylesheet" href="../stylesheets/profitably-branding.css">
+  <link href="../stylesheets/gitban.css" rel="stylesheet">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+  
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- le main nav -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://www.gitban.com">Rekanban</a>
+    </div>
+    <div class="navbar-text">
+      <img src="https://1.gravatar.com/avatar/1d4063d0d2fca34bf7e72e34a09ed0ae?d=https%3A%2F%2Fidenticons.github.com%2Fdafd7ac13127e35619fd4dabe52e67e6.png&amp;s=20">
+      Activecell July 2013 close
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Filters 
+            <span class="fa fa-caret-down"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Filter 1 <i class="fa fa-times pull-right"></i></a></li>
+            <li><a href="#">Filter 2 <i class="fa fa-times pull-right"></i></a></li>
+            <li><a href="#">Filter 3 <i class="fa fa-times pull-right"></i></a></li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-times"></i> Reset filters</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Boards 
+            <span class="fa fa-caret-down"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Activecell June 2013 close</a></li>
+            <li><a href="#">Activecell May 2013 close</a></li>
+            <li><a href="#">Activecell April 2013 close</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-archive"></i> Archive</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-plus"></i> Recipes</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <img src="https://2.gravatar.com/avatar/8a81be5788345ffdf759aeae606ff716?d=https%3A%2F%2Fidenticons.github.com%2F0fd1f4d6a647daf66b2a3f79ecd7eb36.png&amp;s=20">
+            adamrneary 
+            <span class="fa fa-caret-down"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><i class="fa fa-group"></i> Clients</a></li>
+            <li><a href="#" class='disabled'><i class="fa fa-gears"></i> Settings</a></li>
+            <li><a href="#" class='disabled'><i class="fa fa-money"></i> Account</a></li>
+            <li class="divider"></li>
+            <li><a href="#" class='disabled'><i class="fa fa-question"></i> Help</a></li>
+            <li><a href="#"><i class="fa fa-power-off"></i> Log out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav><!-- end navigation -->
+
+  <div class="container">
+    <!-- le sub nav -->
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="well well-sm">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i> Description</span>
+            <select class="chosen-select" multiple>
+              <option value="1">Description 1</option>
+              <option value="2">Description 2</option>
+              <option value="3">Description 3</option>
+              <option value="4">Description 4</option>
+            </select>
+          </div>
+        </div>
+      </div><!-- end filter by description -->
+      <div class="col-lg-6">
+        <div class="well well-sm">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-user"></i> Assignee</span>
+            <select class="chosen-select" multiple>
+              <option value="1">Assignee 1</option>
+              <option value="2">Assignee 2</option>
+              <option value="3">Assignee 3</option>
+              <option value="4">Assignee 4</option>
+            </select>
+          </div>
+        </div>
+      </div><!-- end filter by assignee -->
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="well well-sm">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-check"></i> Status</span>
+            <select class="chosen-select" multiple>
+              <option value="1">Status 1</option>
+              <option value="2">Status 2</option>
+              <option value="3">Status 3</option>
+              <option value="4">Status 4</option>
+            </select>
+          </div>
+        </div>
+      </div><!-- end filter by status -->
+      <div class="col-lg-6">
+        <div class="well well-sm">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-tag"></i> Label</span>
+            <select class="chosen-select" multiple>
+              <option value="1">Label 1</option>
+              <option value="2">Label 2</option>
+              <option value="3">Label 3</option>
+              <option value="4">Label 4</option>
+            </select>
+          </div>
+        </div>
+      </div><!-- end filter by label -->
+    </div>
+  
+    <!-- le tasks -->
+    <div class="row">
+      <!-- next up -->
+      <div class="col-lg-4">
+        <h2>Next up</h2>
+        <div class="well well-sm">
+          <div class="list-group">
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">8</span>
+              <img height="20" src="https://2.gravatar.com/avatar/8a81be5788345ffdf759aeae606ff716?d=https%3A%2F%2Fidenticons.github.com%2F0fd1f4d6a647daf66b2a3f79ecd7eb36.png&amp;s=140" width="20">
+              #1: Jack-in-the-box
+            </a>
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">3</span>
+              <img height="20" src="https://1.gravatar.com/avatar/e55c09439e68fbaaf1231c9e725a8bdc?d=https%3A%2F%2Fidenticons.github.com%2F6789e600d8abaf5d52d427355d513fd2.png&s=140" width="20">
+              #2: Look nasty and stuff
+            </a>
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">8</span>
+              <img height="20" src="https://1.gravatar.com/avatar/e55c09439e68fbaaf1231c9e725a8bdc?d=https%3A%2F%2Fidenticons.github.com%2F6789e600d8abaf5d52d427355d513fd2.png&s=140" width="20">
+              #3: Cocoon 'em in gaffer tape
+            </a>
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">1</span>
+              <img height="20" src="https://2.gravatar.com/avatar/8a81be5788345ffdf759aeae606ff716?d=https%3A%2F%2Fidenticons.github.com%2F0fd1f4d6a647daf66b2a3f79ecd7eb36.png&amp;s=140" width="20">
+              #4: Nick the van
+            </a>
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">2</span>
+              <img height="20" src="https://1.gravatar.com/avatar/e55c09439e68fbaaf1231c9e725a8bdc?d=https%3A%2F%2Fidenticons.github.com%2F6789e600d8abaf5d52d427355d513fd2.png&s=140" width="20">
+              #5: Swap the gear
+            </a>
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">5</span>
+              <img height="20" src="https://2.gravatar.com/avatar/8a81be5788345ffdf759aeae606ff716?d=https%3A%2F%2Fidenticons.github.com%2F0fd1f4d6a647daf66b2a3f79ecd7eb36.png&amp;s=140" width="20">
+              #6: Bring it all back here
+            </a>
+          </div>
+          <button class='btn btn-block btn-primary'>
+            <i class="icon-plus"></i> Add a task/question
+          </button>
+        </div>
+      </div><!-- end next up -->
+      <!-- in progress -->
+      <div class="col-lg-4">
+        <h2>In progress</h2>
+        <div class="well well-sm">
+          <div class="list-group">
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">8</span>
+              <img height="20" src="https://2.gravatar.com/avatar/8a81be5788345ffdf759aeae606ff716?d=https%3A%2F%2Fidenticons.github.com%2F0fd1f4d6a647daf66b2a3f79ecd7eb36.png&amp;s=140" width="20">
+              #1: Jack-in-the-box
+            </a>
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">3</span>
+              <img height="20" src="https://1.gravatar.com/avatar/e55c09439e68fbaaf1231c9e725a8bdc?d=https%3A%2F%2Fidenticons.github.com%2F6789e600d8abaf5d52d427355d513fd2.png&s=140" width="20">
+              #2: Look nasty and stuff
+            </a>
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item active">
+              <span class="badge">8</span>
+              <img height="20" src="https://1.gravatar.com/avatar/e55c09439e68fbaaf1231c9e725a8bdc?d=https%3A%2F%2Fidenticons.github.com%2F6789e600d8abaf5d52d427355d513fd2.png&s=140" width="20">
+              #3: Cocoon 'em in gaffer tape
+            </a>
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">1</span>
+              <img height="20" src="https://2.gravatar.com/avatar/8a81be5788345ffdf759aeae606ff716?d=https%3A%2F%2Fidenticons.github.com%2F0fd1f4d6a647daf66b2a3f79ecd7eb36.png&amp;s=140" width="20">
+              #4: Nick the van
+            </a>
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">2</span>
+              <img height="20" src="https://1.gravatar.com/avatar/e55c09439e68fbaaf1231c9e725a8bdc?d=https%3A%2F%2Fidenticons.github.com%2F6789e600d8abaf5d52d427355d513fd2.png&s=140" width="20">
+              #5: Swap the gear
+            </a>
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">5</span>
+              <img height="20" src="https://2.gravatar.com/avatar/8a81be5788345ffdf759aeae606ff716?d=https%3A%2F%2Fidenticons.github.com%2F0fd1f4d6a647daf66b2a3f79ecd7eb36.png&amp;s=140" width="20">
+              #6: Bring it all back here
+            </a>
+          </div>
+        </div>
+      </div><!-- end in progress -->
+      <!-- accepted -->
+      <div class="col-lg-4">
+        <h2>Accepted</h2>
+        <div class="well well-sm">
+          <div class="list-group">
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">8</span>
+              <img height="20" src="https://2.gravatar.com/avatar/8a81be5788345ffdf759aeae606ff716?d=https%3A%2F%2Fidenticons.github.com%2F0fd1f4d6a647daf66b2a3f79ecd7eb36.png&amp;s=140" width="20">
+              #1: Jack-in-the-box
+            </a>
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">3</span>
+              <img height="20" src="https://1.gravatar.com/avatar/e55c09439e68fbaaf1231c9e725a8bdc?d=https%3A%2F%2Fidenticons.github.com%2F6789e600d8abaf5d52d427355d513fd2.png&s=140" width="20">
+              #2: Look nasty and stuff
+            </a>
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">8</span>
+              <img height="20" src="https://1.gravatar.com/avatar/e55c09439e68fbaaf1231c9e725a8bdc?d=https%3A%2F%2Fidenticons.github.com%2F6789e600d8abaf5d52d427355d513fd2.png&s=140" width="20">
+              #3: Cocoon 'em in gaffer tape
+            </a>
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">1</span>
+              <img height="20" src="https://2.gravatar.com/avatar/8a81be5788345ffdf759aeae606ff716?d=https%3A%2F%2Fidenticons.github.com%2F0fd1f4d6a647daf66b2a3f79ecd7eb36.png&amp;s=140" width="20">
+              #4: Nick the van
+            </a>
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">2</span>
+              <img height="20" src="https://1.gravatar.com/avatar/e55c09439e68fbaaf1231c9e725a8bdc?d=https%3A%2F%2Fidenticons.github.com%2F6789e600d8abaf5d52d427355d513fd2.png&s=140" width="20">
+              #5: Swap the gear
+            </a>
+            <a data-toggle="modal" href="#itemDetail" class="list-group-item">
+              <span class="badge">5</span>
+              <img height="20" src="https://2.gravatar.com/avatar/8a81be5788345ffdf759aeae606ff716?d=https%3A%2F%2Fidenticons.github.com%2F0fd1f4d6a647daf66b2a3f79ecd7eb36.png&amp;s=140" width="20">
+              #6: Bring it all back here
+            </a>
+          </div>
+        </div>
+      </div><!-- end accepted -->
+    </div><!-- end le tasks -->
+
+    <!-- le modal -->
+    <div class="modal fade" id="itemDetail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">#3: Cocoon 'em in gaffer tape</h4>
+          </div>
+          <div class="modal-body">
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                      Description
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <p>
+                      i am a big believer of starting with the html/css for features before
+                      plugging in the functionality. that way, you can agree to the interface
+                      before worrying about functionality.
+                    </p>
+                    <p>
+                      include:
+                    </p>
+                    <ul>
+                      <li>basic app layout</li>
+                      <li>multiple boards with add/remove/rename</li>
+                      <li>multiple columns for lists with add/remove/rename</li>
+                      <li>collapsed items in lists</li>
+                      <li>item detail modal</li>
+                    </ul>
+                    <p>more as we flesh out the first milestone features</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      Details
+                    </h4>
+                  </div>
+                </a>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <form class="form-horizontal" role="form">
+                      <div class="form-group">
+                        <label for="selectAssignee" class="col-lg-2 control-label">Assignee</label>
+                        <div class="col-lg-10">
+                          <select id="selectAssignee" class="chosen-select">
+                            <option>Adam Neary</option>
+                            <option>Sinisa</option>
+                            <option>Aleksey</option>
+                            <option>Daniel</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="selectMilestone" class="col-lg-2 control-label">Milestone</label>
+                        <div class="col-lg-10">
+                          <select id="selectMilestone" class="chosen-select">
+                            <option>Milestone 1</option>
+                            <option>Milestone 2</option>
+                            <option>Milestone 3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="multiLabels" class="col-lg-2 control-label">Labels</label>
+                        <div class="col-lg-10">
+                          <select id="selectMilestone" class="chosen-select" multiple width="300">
+                            <option>Label 1</option>
+                            <option>Label 2</option>
+                            <option>Label 3</option>
+                          </select>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                      Comments
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- end .modal-body -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Save changes</button>
+            <button type="button" class="btn btn-danger">Close</button>
+          </div><!-- end .modal-footer -->
+        </div><!-- end .modal-content -->
+      </div><!-- end .modal-dialog -->
+    </div><!-- end .modal -->
+
+    <!-- le footer -->
+    <div class="footer">
+      <p>&copy; Profitably, Inc. 2013</p>
+    </div>
+  </div><!-- end .container -->
+
+
+  <!-- le javascript -->
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="../javascripts/profitably-branding.js"></script>
+  <script src="../javascripts/gitban.js"></script>
+  
+  <!-- Typekit -->
+  <script type="text/javascript" src="//use.typekit.net/xff3ece.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</body>
+</html>
