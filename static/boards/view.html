@@ -39,9 +39,20 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
+        <li class="navbar-text">
+          Filter by:
+        </li>
+        <li style="margin-top:7px; width:300px;">
+          <select class="chosen-select">
+            <option value="1">Description</option>
+            <option value="2">Assignee</option>
+            <option value="3">Tag</option>
+            <option value="4">Type</option>
+          </select>
+        </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            Filters 
+            Saved Filters 
             <span class="fa fa-caret-down"></span>
           </a>
           <ul class="dropdown-menu" role="menu">
@@ -86,65 +97,7 @@
     </div>
   </nav><!-- end navigation -->
 
-  <div class="container">
-    <!-- le sub nav -->
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="well well-sm">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-search"></i> Description</span>
-            <select class="chosen-select" multiple>
-              <option value="1">Description 1</option>
-              <option value="2">Description 2</option>
-              <option value="3">Description 3</option>
-              <option value="4">Description 4</option>
-            </select>
-          </div>
-        </div>
-      </div><!-- end filter by description -->
-      <div class="col-lg-6">
-        <div class="well well-sm">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-user"></i> Assignee</span>
-            <select class="chosen-select" multiple>
-              <option value="1">Assignee 1</option>
-              <option value="2">Assignee 2</option>
-              <option value="3">Assignee 3</option>
-              <option value="4">Assignee 4</option>
-            </select>
-          </div>
-        </div>
-      </div><!-- end filter by assignee -->
-    </div>
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="well well-sm">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-check"></i> Status</span>
-            <select class="chosen-select" multiple>
-              <option value="1">Status 1</option>
-              <option value="2">Status 2</option>
-              <option value="3">Status 3</option>
-              <option value="4">Status 4</option>
-            </select>
-          </div>
-        </div>
-      </div><!-- end filter by status -->
-      <div class="col-lg-6">
-        <div class="well well-sm">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-tag"></i> Label</span>
-            <select class="chosen-select" multiple>
-              <option value="1">Label 1</option>
-              <option value="2">Label 2</option>
-              <option value="3">Label 3</option>
-              <option value="4">Label 4</option>
-            </select>
-          </div>
-        </div>
-      </div><!-- end filter by label -->
-    </div>
-  
+  <div class="container">  
     <!-- le tasks -->
     <div class="row">
       <!-- next up -->
