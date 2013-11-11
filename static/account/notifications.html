@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <title>Rekanban</title>
+  
+  <!-- le styles -->
+  <link rel="stylesheet" href="../stylesheets/profitably-branding.css">
+  <link href="../stylesheets/gitban.css" rel="stylesheet">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+  
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- le main nav -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://www.gitban.com">Rekanban</a>
+    </div>
+    <div class="navbar-text">
+      <i class="fa fa-tasks"></i>
+      Account
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="navbar-text">
+          <i class="fa fa-search"></i> Filter by:
+        </li>
+        <li style="margin-top:7px; width:300px;">
+          <select class="chosen-select" multiple>
+            <option value="1">Description</option>
+            <option value="2">Assignee</option>
+            <option value="3">Tag</option>
+            <option value="4">Type</option>
+          </select>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-bookmark"></i>
+            Saved Filters 
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Filter 1 <i class="fa fa-times pull-right"></i></a></li>
+            <li><a href="#">Filter 2 <i class="fa fa-times pull-right"></i></a></li>
+            <li><a href="#">Filter 3 <i class="fa fa-times pull-right"></i></a></li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-times"></i> Reset filters</a></li>
+            <li><a href="#"><i class="fa fa-save"></i> Save this filter</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-tasks"></i>
+            Boards 
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="dropdown-header"><i class="fa fa-tasks"></i> Boards</li>
+            <li><a href="#">Board 1</a></li>
+            <li><a href="#">Board 2</a></li>
+            <li><a href="#">Board 3</a></li>
+            <li class="dropdown-header"><i class="fa fa-files-o"></i> Recipes</li>
+            <li><a href="#">Apply Recipe 1</a></li>
+            <li><a href="#">Apply Recipe 2</a></li>
+            <li><a href="#">Apply Recipe 3</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-archive"></i> Archive</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-plus"></i> Create new Board</a></li>
+            <li><a href="#"><i class="fa fa-save"></i> Save this board as a recipe</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#notifications" data-toggle="modal">
+            <i class="fa fa-bell"></i>
+            Notifications
+            <span class="label label-default">10</span>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <img src="https://2.gravatar.com/avatar/8a81be5788345ffdf759aeae606ff716?d=https%3A%2F%2Fidenticons.github.com%2F0fd1f4d6a647daf66b2a3f79ecd7eb36.png&amp;s=20">
+            adamrneary 
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><i class="fa fa-group"></i> Clients</a></li>
+            <li><a href="#" class='disabled'><i class="fa fa-gears"></i> Settings</a></li>
+            <li><a href="#" class='disabled'><i class="fa fa-money"></i> Account</a></li>
+            <li class="divider"></li>
+            <li><a href="#" class='disabled'><i class="fa fa-question"></i> Help</a></li>
+            <li><a href="#"><i class="fa fa-power-off"></i> Log out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav><!-- end navigation -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="page-title">
+          <h1><i class="fa fa-bell"></i> Notifications</h1>
+        </div>
+        <div class="well well-sm">
+          <div class="media">
+            <a class="pull-left" href="#">
+              <img class="media-object" src="https://2.gravatar.com/avatar/8a81be5788345ffdf759aeae606ff716?d=https%3A%2F%2Fidenticons.github.com%2F0fd1f4d6a647daf66b2a3f79ecd7eb36.png&amp;s=40">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading">adamneary</h4>
+              <p>
+                <span class="label label-primary">@kusic</span>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            </div>
+          </div>
+          <div class="media">
+            <a class="pull-left" href="#">
+              <img class="media-object" src="https://1.gravatar.com/avatar/e55c09439e68fbaaf1231c9e725a8bdc?d=https%3A%2F%2Fidenticons.github.com%2F6789e600d8abaf5d52d427355d513fd2.png&amp;s=40">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading">kusic</h4>
+              <p>
+                <span class="label label-primary">@adamneary</span>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            </div>
+          </div>
+          <button class="btn btn-success btn-block">Load more</button>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="well text-center">
+          <img src="https://2.gravatar.com/avatar/8a81be5788345ffdf759aeae606ff716?d=https%3A%2F%2Fidenticons.github.com%2F0fd1f4d6a647daf66b2a3f79ecd7eb36.png&amp;s=125">
+          <p>
+            Adam Neary
+            <br>
+            <span class="label label-primary">@adamneary</span>
+          </p>
+          <button class="btn btn-default btn-block">Change</button>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item"><a href="#">Boards</a></li>
+          <li class="list-group-item"><a href="#">Recipes</a></li>
+          <li class="list-group-item"><a href="#">Tasks</a></li>
+          <li class="list-group-item"><a href="#">Profile</a></li>
+          <li class="list-group-item active"><a href="notifications.html">Notifications</a></li>
+        </ul>
+        <button class="btn btn-danger btn-block">Log out</button>
+      </div>
+    </div>
+  </div><!-- end .container -->
+  
+  <!-- le footer -->
+  <div class="footer">
+    <p>&copy; Profitably, Inc. 2013</p>
+  </div>
+  
+  <!-- le javascript -->
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="../javascripts/profitably-branding.js"></script>
+  <script src="../javascripts/gitban.js"></script>
+  
+  <!-- Typekit -->
+  <script type="text/javascript" src="//use.typekit.net/xff3ece.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</body>
+</html>
